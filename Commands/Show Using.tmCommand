@@ -9,22 +9,21 @@
 
 require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/tm_factor"
 
-doc = STDIN.read
-word = line_current_word(ENV["TM_CURRENT_LINE"], ENV["TM_LINE_INDEX"].to_i)
-factor_run(%Q(#{doc_using_statements(doc)} USE: help\n \\ #{word} help))</string>
+factor_run(%Q(USING: namespaces parser ;
+auto-use? t set "#{ENV["TM_FILEPATH"]}" run-file auto-use? f set))</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
-	<string>document</string>
+	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>^H</string>
+	<string>^u</string>
 	<key>name</key>
-	<string>Help for Word</string>
+	<string>Show Using</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>discard</string>
 	<key>scope</key>
 	<string>source.factor</string>
 	<key>uuid</key>
-	<string>BC5BE120-734B-40DF-8B6B-5D3243614B27</string>
+	<string>93AF1721-C14D-428A-B5A0-34CEFAA3B3C5</string>
 </dict>
 </plist>
