@@ -27,9 +27,9 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>&lt;%\s</string>
+			<string>&lt;%</string>
 			<key>end</key>
-			<string>(?&lt;=\s)%&gt;</string>
+			<string>(?&lt;!\S)%&gt;</string>
 			<key>name</key>
 			<string>source.factor.embedded.html</string>
 			<key>patterns</key>
